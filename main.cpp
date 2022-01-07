@@ -23,7 +23,7 @@ int main(int argc, char ** argv) {
   float da, nu, punctaj_da, punctaj_nu;
   zone = new Baza * [3];
 
-  for (int i = 0; i < 3; i++) { //citire
+  for (int i = 0; i < 3; i++) { //citire din fisier
 
     int populatie = 0;
     input >> tip;
@@ -58,7 +58,7 @@ int main(int argc, char ** argv) {
   for (int i = 0; i < 3; i++)
     zone[i] -> afisare();
 
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < 3; i++) { //partea de raspuns la intrebari si scris in fisier
     input >> nr >> tip;
     if (tip == 3)
       input >> ani;
@@ -68,13 +68,7 @@ int main(int argc, char ** argv) {
       input.ignore();
       getline(input, text);
       output << text << endl;
-
-     // cout << endl << "debug  " << i << "  " << text << endl;
-      //input.ignore();
-
       input >> text;
-     // cout << endl << "debug  " << i << "  " << text << endl;
-
       if (tip == 1) {
         int da[5], nu[5];
         for (int k = 0; k < 5; k++)
@@ -89,7 +83,6 @@ int main(int argc, char ** argv) {
 
         if (punctaj_da > punctaj_nu)
           output << "Acceptat ";
-
         else if (punctaj_da < punctaj_nu)
           output << "Respins ";
         else output << "Egalitate ";
