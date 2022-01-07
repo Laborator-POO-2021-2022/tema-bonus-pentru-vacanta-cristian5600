@@ -6,7 +6,7 @@
 class zona2: public Baza{ 
 
 	int populatie;
-	int functie[10]; //c‚te persoane o anumita functie Ón ordinea : 10 9 8 7 6 5 4 3 2 1 
+	int functie[10]; //c√¢te persoane o anumita functie √Æn ordinea : 10 9 8 7 6 5 4 3 2 1 
 public:
 	zona2();
 	zona2(int , int []);
@@ -14,8 +14,6 @@ public:
 	float prezenta_vot(int [],int[],int);
 	float punctaj_da(int [],int);
 	float punctaj_nu(int [],int);
-	bool iszona1();
-	bool iszona2();
-	bool iszona3();
+
 };
 #endif
