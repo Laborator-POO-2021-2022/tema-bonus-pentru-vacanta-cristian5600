@@ -13,9 +13,7 @@ class zona1: public Baza {
   float prezenta_vot(int[], int[], int);
   float punctaj_da(int[], int);
   float punctaj_nu(int[], int);
-  bool iszona1();
-  bool iszona2();
-  bool iszona3();
+
 
 };
 #endif
