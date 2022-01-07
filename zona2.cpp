@@ -51,12 +51,3 @@ float zona2::punctaj_da(int da[], int aux) {
     da_suma = da[i] * (10 - i) + da_suma;
   return da_suma;
 }
-bool zona2::iszona1() {
-  return false;
-}
-bool zona2::iszona2() {
-  return true;
-}
-bool zona2::iszona3() {
-  return false;
-}
