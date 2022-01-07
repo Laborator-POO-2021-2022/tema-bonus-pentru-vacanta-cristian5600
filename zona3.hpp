@@ -6,7 +6,7 @@
 class zona3: public Baza{ 
 
 	int populatie;
-	int varsta[4]; //numarul de persoane din categoriile de v‚rsta Ón ordinea:0-14 14-20 20-40 40+ 
+	int varsta[4]; //numarul de persoane din categoriile de v√¢rsta √Æn ordinea:0-14 14-20 20-40 40+ 
 public:
 	zona3();
 	zona3(int , int []);
@@ -14,9 +14,7 @@ public:
 	float prezenta_vot(int [],int [],int);
 	float punctaj_da(int [],int );
 	float punctaj_nu(int [],int );
-	bool iszona1();
-	bool iszona2();
-	bool iszona3();
+
 
 };
 #endif
